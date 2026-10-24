@@ -18,6 +18,10 @@ export class Wallet {
     this.address = sha256(publicKey);
   }
 
+  getPrivateKey(): string {
+    return this.privateKey;
+  }
+
   public createTransaction(
     recipient: string,
     amount: number,
